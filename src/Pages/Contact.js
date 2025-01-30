@@ -1,7 +1,12 @@
+
+
 function Contact() {
-    return (
-        <div></div>
-    )
+  return (
+    <div>
+        <p> adresse email redglitter production :</p>
+        <p> numéros de téléphone :</p>
+    </div>
+  );
 }
 
 export default Contact;

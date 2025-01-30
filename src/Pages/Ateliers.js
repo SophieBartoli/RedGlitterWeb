@@ -1,6 +1,10 @@
+import Collapse from "../Components/Collapse";
+
 function Ateliers() {
     return(
-        <div></div>
+        <div>
+            <Collapse/>
+        </div>
     )
 }
 

@@ -88,15 +88,17 @@
 }
 
 .footerDiv {
-  height: 300px;
   background-color: black;
   margin: 100px 0 0 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 .footerLinksDiv {
   width: 50%;
+  margin: 50px 0 50px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -105,6 +107,20 @@
 .footerLinks {
   width: 70px;
   width: 70px;
+}
+
+#linkMentions {
+  margin: 0 0 20px 0;
+}
+
+.headerAPropos {
+  margin: 50px 0 50px 0;
+}
+
+.membresDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=App.css.map */
