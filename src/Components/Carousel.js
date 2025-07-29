@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import slideUne from "../Assets/Slide1.webp";
 import slideDeux from "../Assets/Slide2.webp";
 import slideTrois from "../Assets/Slide3.webp";
@@ -24,10 +24,10 @@ function Carousel() {
 
   const slideCount = slides.length;
 
-  const goToNext = () => {
-    if (currentIndex >= slideCount - 1) return;
-    setCurrentIndex((prev) => prev + 1);
-  };
+  const goToNext = useCallback(() => {
+  if (currentIndex >= slideCount - 1) return;
+  setCurrentIndex((prev) => prev + 1);
+}, [currentIndex, slideCount]);
 
   const goToPrevious = () => {
     if (currentIndex <= 0)
@@ -35,11 +35,10 @@ function Carousel() {
   };
 
 
-  useEffect(() => {
-    intervalRef.current = setInterval(goToNext, 5000);
-    return () => clearInterval(intervalRef.current);
-  }, [currentIndex]);
-
+ useEffect(() => {
+  intervalRef.current = setInterval(goToNext, 5000);
+  return () => clearInterval(intervalRef.current);
+}, [goToNext]);
   
   const handleTransitionEnd = () => {
     if (currentIndex === slideCount - 1) {

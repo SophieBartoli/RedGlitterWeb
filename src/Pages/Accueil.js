@@ -1,5 +1,4 @@
 import Carousel from "../Components/Carousel";
-import logoRgp from '../Assets/logoRgpResized.webp';
 import photoGroupe from '../Assets/photoGroupe.webp';
 import Newsletter from "../Components/Newsletter";
 import helloAsso from '../Assets/helloAsso.webp';
