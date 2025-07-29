@@ -1,27 +1,31 @@
 import ProjetsCards from "../Components/ProjetsCards";
+import massacre from '../Assets/massacre.webp';
+import accent from '../Assets/accent.webp';
+import reveProjet from '../Assets/reveProjet.webp';
 
 function Projets() {
     return (
-        <div>
+        <div className="projets-container">
             <h2>NOS PROJETS</h2>
             <div>
-                <h3>DEJA PUBLIES</h3>
-                <div>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Nuit Rouge" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Reportage Lacapelle" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Sexismes Ordinaires" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Vidéo de présentation" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Suèdage Psychose" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="The Act" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Nightmare Hangover" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Mâchoires" projetsTxt=""/>
+                <div className="youtubeVideos">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/cIiM8u260dY?si=YW63NKXMtA4DyB-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/OmFWm1yUtVo?si=VBVsRF8jnIEuxZz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/f50hdMJaiB4?si=fCAOeHOZ8Ns_4Z0t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kpwuogAoF-4?si=PFvbE6xWyP2zS35I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v1kJqiCDOmU?si=FrY_MDJNOsUk9whP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MRJDusBGVps?si=4WfJjBmlr49m3VHR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZlWczMnK-4?si=3_UpXHfVSrO0B7xq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xyLB4TCwGeA?si=WcJOTAndMP99f7im" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vPsWLh3SjIg?si=SUtTSONe3xe-Abgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yaU8pTV_G1o?si=mLGuB_Kott_f-xI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <h3>PROCHAINES SORTIES </h3>
-                <div>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Sister Surprise" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="VidéO de rentrée" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Massacre au Couteau" projetsTxt=""/>
-                    <ProjetsCards projetsImg="" projetsAlt="" projetsHeader="Accent tonique" projetsTxt=""/>
+                <h3>NOS PROCHAINES SORTIES </h3>
+                <div className="projectPhotos">
+                    <ProjetsCards projetsImg={massacre} projetsAlt="projet massacre au couteau" projetsHeader="Massacre au Couteau" projetsTxt=""/>
+                    <ProjetsCards projetsImg={accent} projetsAlt="projet accent tonique" projetsHeader="Accent tonique" projetsTxt=""/>
+                    <ProjetsCards projetsImg={reveProjet} projetsAlt="projet reve" projetsHeader="Rêve" projetsTxt=""/>
+
                 </div>
             </div>
         </div>

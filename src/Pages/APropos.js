@@ -1,34 +1,44 @@
 import Video from "../Components/Video";
 import Membres from "../Components/Membres";
-import logoRgp from '../Assets/logoRgpResized.webp';
+import aVenir from '../Assets/aVenir.webp';
+import marianne from '../Assets/marianne.webp';
+import denis from '../Assets/denis.webp';
+import pauline from '../Assets/pauline.webp';
+import sophie from '../Assets/sophie.webp';
+import lea from '../Assets/lea.webp';
 
 function APropos() {
     return (
-        <div>
-            <div>
-                <h2 class="headerAPropos"> QUI SOMMES-NOUS ? </h2>
-                <Video />
-            </div>
-            <div>
-                <h2 class="headerAPropos"> NOTRE HISTOIRE </h2>
-                <img src="" alt="frise chronologique"/>
-            </div>
-            <div>
-                <h2 class="headerAPropos"> NOS INSPIRATIONS </h2>
-                <img src="" alt="moodboard de l'association"/>
-            </div>
-            <div>
-                <h2 class="headerAPropos"> NOTRE CONSEIL D'ADMINISTRATION </h2>
-                <div class="membresDiv">
-                    <Membres membresImg={logoRgp} membresAlt="" membresHeader="Léa Dentin" membrestxt="Présidente"/>
-                    <Membres membresImg={logoRgp} membresAlt="" membresHeader="Pauline Cormary" membrestxt="Trésorière"/>
-                    <Membres membresImg={logoRgp} membresAlt="" membresHeader="Sophie Bartoli" membrestxt="Secrétaire"/>
-                    <Membres membresImg={logoRgp} membresAlt="" membresHeader="Denis Vandesteene" membrestxt="Assistant bureau"/>
-                    <Membres membresImg={logoRgp} membresAlt="" membresHeader="Marianne Faure" membrestxt="Responsable Comm"/>
+        <div className="apropos-container">
+            <section className="section">
+                <h2 className="section-title">Qui sommes-nous ?</h2>
+                <div className="video-container">
+                    <Video />
                 </div>
-            </div>    
+            </section>
+
+            <section className="section">
+                <h2 className="section-title">Notre histoire</h2>
+                <img className="image" src={aVenir} alt="frise chronologique" />
+            </section>
+
+            <section className="section">
+                <h2 className="section-title">Nos inspirations</h2>
+                <img className="image" src={aVenir} alt="moodboard de l'association" />
+            </section>
+
+            <section className="section">
+                <h2 className="section-title">Notre conseil d'administration</h2>
+                <div className="membres-grid">
+                    <Membres membresImg={lea} membresAlt="" membresHeader="Léa" membresLastName='Dentin' membrestxt="Présidente" />
+                    <Membres membresImg={pauline} membresAlt="" membresHeader="Pauline" membresLastName="Cormary" membrestxt="Trésorière" />
+                    <Membres membresImg={sophie} membresAlt="" membresHeader="Sophie" membresLastName="Bartoli" membrestxt="Secrétaire" />
+                    <Membres membresImg={denis} membresAlt="" membresHeader="Denis" membresLastName="Vandesteene" membrestxt="Assistant bureau" />
+                    <Membres membresImg={marianne} membresAlt="" membresHeader="Marianne" membresLastName="Faure" membrestxt="Responsable Comm" />
+                </div>
+            </section>
         </div>
-    )
+    );
 }
 
 export default APropos;

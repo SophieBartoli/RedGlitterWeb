@@ -19,7 +19,7 @@ function Accueil() {
                 <h1> BIENVENUE CHEZ RED-GLITTER PRODUCTION​ </h1>
                 <div class="texteAccueil">
                     <img id="photoMembres" src={photoGroupe} alt="membres"/>
-                    <p class="textePresentationAccueil"> <b> QUI SOMMES NOUS ? </b> <br/><br/> Association de Cinéma et Audiovisuel, nous sommes tous des passionnés de films, séries, jeux-vidéos, animés, etc... <br/> <br/> Débutants et professionnels, nous créons, réalisons, et produisons des oeuvres audiovisuelles !
+                    <p class="textePresentationAccueil">Association de Cinéma et Audiovisuel, nous sommes tous des passionnés de films, séries, jeux-vidéos, animés, etc... <br/> <br/> Débutants et professionnels, nous créons, réalisons, et produisons des oeuvres audiovisuelles !
                      </p>
                      <img id="photoProjo" src={projo} alt="projecteur"/>
                 </div>
