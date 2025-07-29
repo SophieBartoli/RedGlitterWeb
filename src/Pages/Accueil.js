@@ -1,7 +1,14 @@
 import Carousel from "../Components/Carousel";
 import logoRgp from '../Assets/logoRgpResized.webp';
+import photoGroupe from '../Assets/photoGroupe.webp';
 import Newsletter from "../Components/Newsletter";
-import newsImg from '../Assets/newsResized.webp';
+import helloAsso from '../Assets/helloAsso.webp';
+import sisterSurprise from '../Assets/sisterSurprise.webp';
+import kitAsso from '../Assets/kitAsso.webp';
+import moezy from '../Assets/moezy.webp';
+import reve from '../Assets/Reve.webp';
+import bureau from '../Assets/bureau.webp';
+import projo from '../Assets/projo.webp';
 
 function Accueil() {
     return (
@@ -10,23 +17,25 @@ function Accueil() {
                 <Carousel />
             </div>
             <div class="texteAccueilDiv">
-                <h1> BIENVENUE SUR LE SITE WEB RED GLITTER </h1>
+                <h1> BIENVENUE CHEZ RED-GLITTER PRODUCTION​ </h1>
                 <div class="texteAccueil">
-                    <img src={logoRgp} alt="logo de l'association"/>
-                    <p class="textePresentationAccueil"> BLABLABLA PRESENTATION DE L'ASSO ON FAIT DU CINEMA ET DES FILMS AUSSI LOL C RIGOLO VIENS ON EST DES ETUDIANTS ET PASSIONES ET ON AIME BIEN AUSSI LES JEUX VIDEOS ET LES ANIMES ET LES SERIES ET TOUT CE QUI TOUCHE A LA FICTION EN FAIT VOILA DEVIENS UNE PAILLETTE</p>
+                    <img id="photoMembres" src={photoGroupe} alt="membres"/>
+                    <p class="textePresentationAccueil"> <b> QUI SOMMES NOUS ? </b> <br/><br/> Association de Cinéma et Audiovisuel, nous sommes tous des passionnés de films, séries, jeux-vidéos, animés, etc... <br/> <br/> Débutants et professionnels, nous créons, réalisons, et produisons des oeuvres audiovisuelles !
+                     </p>
+                     <img id="photoProjo" src={projo} alt="projecteur"/>
                 </div>
             </div>
             <div class="newsletterDiv">
-                <h2>LA NEWSLETTER RED GLITTER</h2>
+                <h2>LA NEWSLETTER RED-GLITTER</h2>
                 <div class="newsletterNewsDiv">
-                    <Newsletter newsImg={newsImg} newsAlt="" newsHeader="Adhésion HelloAsso !" newsTxt="Ifjhiruehwiefievurgeuihfuehrhvsydugve reiuie" />
-                    <Newsletter newsImg={newsImg} newsAlt="" newsHeader="Sortie Sister Surprise !" newsTxt="Aaofhijermnbiur egh oghrte reiohgi" />
-                    <Newsletter newsImg={newsImg} newsAlt="" newsHeader="Financements Kit Asso !" newsTxt="Ahwqj rgj ei jf eigirejbidjpr" />
+                    <Newsletter newsImg={helloAsso} newsAlt="" newsHeader="Adhésion HelloAsso" newsTxt="Ouverture des adhésions Red-Glitter Production" />
+                    <Newsletter newsImg={sisterSurprise} newsAlt="" newsHeader="Sortie Sister Surprise" newsTxt="Notre court-métrage d'horreur de notre dernier Séjour Créatif" />
+                    <Newsletter newsImg={kitAsso} newsAlt="" newsHeader="Financements Kit Asso" newsTxt="Nous avons obtenu 500 euros de matériel" />
                 </div>
                 <div class="newsletterNewsDiv">   
-                    <Newsletter newsImg={newsImg} newsAlt="" newsHeader="Evénement Moezy !" newsTxt="AhqJA ej fe jfjireofvojrj p" />
-                    <Newsletter newsImg={newsImg} newsAlt="" newsHeader="Sortie Rêve !" newsTxt="Ajwj re jwiookfjioporg js hiroejprokrgk[o" />
-                    <Newsletter newsImg={newsImg} newsAlt="" newsHeader="Nouveau bureau !" newsTxt="fweQiqjOIRHEPOF E WIHTUIPEUHjfrgk opjegri" /> 
+                    <Newsletter newsImg={moezy} newsAlt="" newsHeader="Evénement Moezy" newsTxt="En préparation de notre spectacle en collaboration avec Moezy" />
+                    <Newsletter newsImg={reve} newsAlt="" newsHeader="Sortie Rêve" newsTxt="Nous avions un stand à la Fête des Assos de Toulouse" />
+                    <Newsletter newsImg={bureau} newsAlt="" newsHeader="Nouveau bureau" newsTxt="Découvrez les membres du bureau" /> 
                 </div>
             </div>
 

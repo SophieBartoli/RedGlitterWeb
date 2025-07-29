@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .App {
   text-align: center;
 }
@@ -19,8 +20,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 5vmin);
   color: white;
+}
+
+.navbar-collapse {
+  font-size: 25px !important;
+  margin: 0 0 0 20px;
 }
 
 .App-link {
@@ -41,55 +47,170 @@
   margin: 0 0 0 10px;
 }
 
-#slideUne {
-  height: 600px;
+.carousel {
+  position: relative;
   width: 100%;
-  object-fit: cover;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(75, 75, 75, 0.829);
 }
 
-#slideDeux {
-  height: 600px;
-  width: 100%;
-  object-fit: cover;
+.carousel-track {
+  display: flex;
 }
 
-#slideTrois {
-  height: 600px;
-  width: 100%;
+.carousel-image {
+  flex-shrink: 0;
   object-fit: cover;
+  height: 800px; /* Adjust height as needed */
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0 12px;
+  z-index: 10;
+  user-select: none;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.texteAccueil img {
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
 }
 
 .texteAccueilDiv {
   display: flex;
   align-items: center;
-  margin: 150px 0 150px 0;
   flex-direction: column;
+  background-color: #1a1a1a;
+  padding: 30px 20px;
 }
-.texteAccueilDiv .texteAccueil {
-  margin: 40px 0 0 0;
+
+.texteAccueilDiv h1 {
+  color: #f5f5f5;
+  margin-top: 100px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 4px 20px rgba(255, 255, 255, 0.226);
+  letter-spacing: 1px;
+}
+
+.texteAccueil {
+  margin: 50px 0 100px 0;
   display: flex;
-  flex-direction: row;
-  width: 50%;
+  flex-direction: column;
+  width: 70%;
+  max-width: 1000px;
   align-items: center;
+  position: relative;
+  padding: 40px;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
 }
-.texteAccueilDiv .texteAccueil .textePresentationAccueil {
-  margin: 0 0 0 50px;
+
+#photoMembres {
+  height: 600px;
+  width: auto;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(75, 75, 75, 0.8);
+  transition: transform 0.3s ease;
+}
+
+#photoMembres:hover {
+  transform: scale(1.02);
+}
+
+.textePresentationAccueil {
+  margin-top: 80px;
+  font-size: 22px;
+  color: #c6c6c6;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+#photoProjo {
+  position: absolute;
+  top: 450px;
+  right: 0;
+  height: 300px;
+  width: auto;
+  z-index: 2;
+  opacity: 1;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease;
+}
+
+.newsletterDiv {
+  background-color: #f9f9f9;
+  padding: 0 0 100px 0;
+  color: #890007;
+}
+.newsletterDiv h2 {
+  padding: 120px 0 50px 0;
+  font-size: 48px;
+  text-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
 }
 
 .newsletterNewsDiv {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+.newsletterNewsDiv img {
+  width: 300px;
+  height: 200px; /* ← fixe une hauteur ! */
+  object-fit: cover; /* ← rogne l’image sans déformation */
+  border-radius: 8px;
+  margin: 0 0 20px 0; /* optionnel : coins arrondis */
 }
 
 .news {
-  width: 400px;
-  margin: 20px 0 10px 0;
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  color: #333333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #890007;
+}
+
+.news:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
 }
 
 .footerDiv {
   background-color: black;
-  margin: 100px 0 0 0;
+  margin: 0 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,10 +218,10 @@
 }
 
 .footerLinksDiv {
-  width: 50%;
+  width: 500px;
   margin: 50px 0 50px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -123,4 +244,4 @@
   justify-content: space-around;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */
