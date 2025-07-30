@@ -5,7 +5,7 @@ import helloAsso from '../Assets/helloAsso.webp';
 import sisterSurprise from '../Assets/sisterSurprise.webp';
 import kitAsso from '../Assets/kitAsso.webp';
 import moezy from '../Assets/moezy.webp';
-import reve from '../Assets/Reve.webp';
+import feteAsso from '../Assets/feteAsso.webp';
 import bureau from '../Assets/bureau.webp';
 import projo from '../Assets/projo.webp';
 
@@ -33,7 +33,7 @@ function Accueil() {
                 </div>
                 <div class="newsletterNewsDiv">   
                     <Newsletter newsImg={moezy} newsAlt="" newsHeader="Evénement Moezy" newsTxt="En préparation de notre spectacle en collaboration avec Moezy" />
-                    <Newsletter newsImg={reve} newsAlt="" newsHeader="Sortie Rêve" newsTxt="Nous avions un stand à la Fête des Assos de Toulouse" />
+                    <Newsletter newsImg={feteAsso} newsAlt="" newsHeader="Fête des Associations" newsTxt="Nous avions un stand à la Fête des Assos de Toulouse" />
                     <Newsletter newsImg={bureau} newsAlt="" newsHeader="Nouveau bureau" newsTxt="Découvrez les membres du bureau" /> 
                 </div>
             </div>
